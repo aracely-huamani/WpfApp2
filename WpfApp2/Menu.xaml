@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp2.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800">
+    <Grid>
+        <!-- Contenido del menú -->
+        <Menu>
+            <MenuItem Header="Operaciones">
+                <MenuItem Header="Ingresos" Click="IngresosClick"/>
+                <MenuItem Header="Salida" Click="SalidaClick"/>
+            </MenuItem>
+            <MenuItem Header="Mantenimientos">
+                <MenuItem Header="Conductores" Click="ConductoresClick"/>
+                <MenuItem Header="Transportistas" Click="TransportistasClick"/>
+                <MenuItem Header="Camiones" Click="CamionesClick"/>
+                <MenuItem Header="Productos" Click="ProductosClick"/>
+            </MenuItem>
+            <MenuItem Header="Reportes">
+                <MenuItem Header="Cargas" Click="CargasClick"/>
+                <MenuItem Header="Ingresos" Click="IngresosReporteClick"/>
+                <MenuItem Header="Salidas" Click="SalidasReporteClick"/>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
